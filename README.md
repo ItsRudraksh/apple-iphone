@@ -1,5 +1,3 @@
-README body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; } .container { max-width: 800px; margin: 0 auto; padding: 20px; } h1, h2, h3 { color: #333; } a { color: #007bff; text-decoration: none; } a:hover { text-decoration: underline; } pre { background-color: #f8f8f8; padding: 10px; border: 1px solid #ddd; border-radius: 5px; overflow-x: auto; }
-
 # Apple iPhone Website
 
 This project is an Apple iPhone-themed website developed using ReactJS, Three.js, GSAP (GreenSock Animation Platform), and Tailwind CSS for the UI. It showcases interactive 3D models, smooth animations, and a sleek, modern design that captures the essence of Apple's aesthetic.
@@ -40,7 +38,7 @@ To get a local copy up and running, follow these steps:
 
 1.  **Clone the repository:**
 
-        git clone https://github.com/your-username/apple-iphone-website.git
+        git clone https://github.com/ItsRudraksh/apple-iphone.git
 
 2.  **Navigate to the project directory:**
 
@@ -50,39 +48,31 @@ To get a local copy up and running, follow these steps:
 
         npm install
 
+## Using Vite for Development
+
+Vite is used as the build tool for this project, providing fast build times and an optimized development experience.
+
 ## Usage
 
-To start the development server, run:
+To start the development server using Vite, run:
 
-    npm start
+    npm run dev
 
-This will run the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser. The page will reload if you make edits. You will also see any lint errors in the console.
+This command will start the Vite development server and open the project in your default web browser at [http://localhost:5173](http://localhost:5173).
 
-## Project Structure
+To build the project for production, run:
 
-    apple-iphone-website/
+    npm run build
 
-    ├── public/
-    │ ├── index.html
-    │ └── ...
-    ├── src/
-    │ ├── assets/
-    │ ├── components/
-    │ │ ├── 3DModels/
-    │ │ │ └── iPhoneModel.js
-    │ │ ├── Header.js
-    │ │ ├── Footer.js
-    │ │ └── ...
-    │ ├── styles/
-    │ │ ├── tailwind.css
-    │ │ └── ...
-    │ ├── App.js
-    │ ├── index.js
-    │ └── ...
-    ├── .gitignore
-    ├── package.json
-    ├── README.md
-    └── ...
+This command will bundle your application into optimized static files for deployment.
+
+### Previewing the Production Build
+
+To preview the production build locally, run:
+
+    npm run preview
+
+This command will start a local server and serve the optimized production build.
 
 ## Contributing
 
